@@ -38,9 +38,6 @@ void loop() {
   Serial.println(voltage);
 
   // delete this after verifying the board is working for you
-  Serial.println(i);
-
-  i++;
   delay(1000);
 }
 
