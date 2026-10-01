@@ -4,8 +4,10 @@
 /***************************** STATIC VARIABLE DEFINITIONS *****************************/
 
 // this is a constant variable, it can not be changed
-// the variable is referencing pin 2 which is where the sensor is connected
-static constexpr uint8_t signalPin = 2;
+// the variable is referencing pin 32 which is where the sensor is connected
+
+static constexpr uint8_t signalPin = 32;
+
 int i = 0;
 
 
