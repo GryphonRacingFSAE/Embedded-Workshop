@@ -15,8 +15,8 @@ int i = 0;
 
 int readVoltage(int signal) {
   // use the analog read function to read the voltage from the sensor
- 
-  return 0;
+  int voltage = analogRead(signal);
+  return voltage;
 }
 
 
@@ -24,8 +24,7 @@ int readVoltage(int signal) {
 
 void setup() {
   // set the signal pin as an input
-  // pinMode(fill this);
-
+  pinMode(signalPin, INPUT);
   // Serial setup
     Serial.begin(115200);
     delay(2000);
@@ -34,11 +33,11 @@ void setup() {
 
 void loop() {
   // call your function here to run forever
+  int voltage = readVoltage(signalPin);
+  Serial.print("Voltage reading: ");
+  Serial.println(voltage);
 
   // delete this after verifying the board is working for you
-  Serial.println(i);
-
-  i++;
   delay(1000);
 }
 
